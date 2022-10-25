@@ -17,7 +17,7 @@
         <input type="number" id="odd-or-even" v-model="userNum">
         <button id="user-number" @click="clickButton">Submit</button>
         
-        <h1>{{titleNum}}</h1>
+        <h1 v-bind:class="titleClass">{{titleNum}}</h1>
         <img v-bind:src="img" alt="">
     </div>
 

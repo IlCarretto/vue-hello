@@ -12,16 +12,21 @@ createApp ({
             userNum: "",
             numResult: "",
             titleNum: "",
+            titleClass: "",
             img: ("https://picsum.photos/200/300")
         }
     },
     methods: {
         clickButton: function() {
-            if (this.userNum % 2 === 0) {
-                this.numResult = "pari";
-            } else {
-                this.numResult = "dispari"
-            }
+            // if (this.userNum % 2 === 0) {
+            //     this.numResult = "pari";
+            //     this.titleClass = "blue";
+            // } else {
+            //     this.numResult = "dispari";
+            //     this.titleClass = "pink";
+            // }
+            this.userNum % 2 === 0 ? this.numResult = "pari" : this.numResult = "dispari";
+            this.userNum % 2 === 0 ? this.titleClass = "blue" : this.titleClass = "pink";
             this.titleNum = `Ciao! il tuo numero è ${this.numResult}!`
         }
     }
