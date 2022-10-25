@@ -13,7 +13,11 @@
 <body>
     
     <div id="app">
-        <h1>{{title}}</h1>
+        <label for="odd-or-even">Inserisci un numero</label>
+        <input type="number" id="odd-or-even" v-model="userNum">
+        <button id="user-number" @click="clickButton">Submit</button>
+        
+        <h1>{{titleNum}}</h1>
         <img v-bind:src="img" alt="">
     </div>
 
